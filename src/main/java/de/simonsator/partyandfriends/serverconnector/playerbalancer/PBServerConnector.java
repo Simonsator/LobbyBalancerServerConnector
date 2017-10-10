@@ -1,17 +1,17 @@
-package de.simonsator.partyandfriends.serverconnector.lobbybalancer;
+package de.simonsator.partyandfriends.serverconnector.playerbalancer;
 
 import de.simonsator.partyandfriends.api.PAFExtension;
 import de.simonsator.partyandfriends.api.friends.ServerConnector;
 import de.simonsator.partyandfriends.friends.subcommands.Jump;
-import me.jaimemartz.lobbybalancer.manager.PlayerLocker;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
+import com.jaimemartz.playerbalancer.manager.PlayerLocker;
 
 /**
  * @author Simonsator
  * @version 1.0.0 26.06.17
  */
-public class LBServerConnector extends PAFExtension implements ServerConnector {
+public class PBServerConnector extends PAFExtension implements ServerConnector {
 	public void onEnable() {
 		Jump.setServerConnector(this);
 	}
@@ -22,8 +22,4 @@ public class LBServerConnector extends PAFExtension implements ServerConnector {
 		PlayerLocker.unlock(pPlayer);
 	}
 
-	public void reload() {
-		onDisable();
-		onEnable();
-	}
 }

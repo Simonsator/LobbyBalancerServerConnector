@@ -1,5 +1,5 @@
 name: LobbyBalancer-Server-Connector
-main: de.simonsator.partyandfriends.serverconnector.lobbybalancer.LBServerConnector
+main: de.simonsator.partyandfriends.serverconnector.playerbalancer.PBServerConnector
 version: ${project.version}
 author: Simonsator
 depend: [LobbyBalancer, PartyAndFriends]
