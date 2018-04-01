@@ -1,11 +1,11 @@
 package de.simonsator.partyandfriends.serverconnector.playerbalancer;
 
+import com.jaimemartz.playerbalancer.helper.PlayerLocker;
 import de.simonsator.partyandfriends.api.PAFExtension;
 import de.simonsator.partyandfriends.api.friends.ServerConnector;
 import de.simonsator.partyandfriends.friends.subcommands.Jump;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
-import com.jaimemartz.playerbalancer.manager.PlayerLocker;
 
 /**
  * @author Simonsator
